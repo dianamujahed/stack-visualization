@@ -69,6 +69,15 @@ function pop() {
     renderStack();
 }
 
+function peek(){
+
+}
+
+function newStack(){
+    stack.clear();
+    renderStack();
+}
+
 
 
 
