@@ -86,9 +86,28 @@ header {
   width: 183px;
   height: 50px;
   margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
 }
 
-.item5 {
+.item1 {
   background-color: yellow;
+}
+
+.item2 {
+  background-color: #97F846;
+}
+
+.item3 {
+  background-color: #0AF1F9;
+}
+
+.item4 {
+  background-color: #F92222;
 }
 /*# sourceMappingURL=style.css.map */

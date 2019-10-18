@@ -42,18 +42,17 @@ class Stack {
 
 
 stack = new Stack();
-stack.push('diana');
+stack.push(1);
 stack.push(2);
 stack.push(3);
-stack.push(4);
-stack.push(5);
-stack.push(6);
+
 
 
 function renderStack() {
     let html = "";
-    for (let i = 0; i < stack.size(); i++) {
-        html += `<div class="lonely-item ">${stack.peek()}</div>`;
+    let items =  stack.items;
+    for (let i = stack.size()-1; i>=0; i--) {
+        html += `<div class="lonely-item item${items[i]}">${items[i]}</div>`;
     }
     document.getElementById("stack").innerHTML = html;
 }
@@ -95,6 +94,11 @@ function isStackEmpty() {
 
 function swapTopTwo(){
     stack.swapTopTwo();
+    renderStack();
+}
+
+function push(){
+    stack.push(stack.size()+1);
     renderStack();
 }
 
