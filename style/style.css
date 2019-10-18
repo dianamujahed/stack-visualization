@@ -1,0 +1,87 @@
+* {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  top: 80px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #1F5CEC;
+  font-size: 25px;
+}
+
+.focus-color {
+  color: red;
+}
+
+.stack {
+  border-width: 0px 3px 3px 3px;
+  border-style: solid;
+  border-color: black;
+  width: 200px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.operations {
+  color: #1F5CEC;
+  font-size: 20px;
+  padding: 0px 50px 0px 50px;
+  margin-bottom: 10px;
+}
+
+.operations p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.push {
+  color: #1F5CEC;
+  padding: 50px;
+}
+
+.push .lonely-p p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.push .lonely-item {
+  background-color: #93F846;
+  width: 190px;
+  height: 50px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,61 @@
+$mainColor :#1F5CEC;
+ $mainFontStyle :'Comic Sans MS', cursive, sans-serif;
+ *{
+    font-family:$mainFontStyle;
+    box-sizing: border-box;
+ }
+ section{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     position: relative;
+     top: 80px;
+ }
+header{
+    display: flex;
+    justify-content: center;
+    color: $mainColor;
+    font-size: 25px;
+}
+.focus-color{
+    color: red;
+}
+.stack{
+    border-width: 0px 3px 3px 3px;
+    border-style: solid;
+    border-color: black;
+    width:200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.operations{
+    color: $mainColor;
+    font-size: 20px;
+    padding: 0px 50px 0px 50px;
+    margin-bottom: 10px;
+    p{
+        display: flex;
+        justify-content: center;
+        margin-top:20px;
+    }
+}
+.push{
+    color: $mainColor;
+    padding: 50px;
+    .lonely-p{
+       
+        p{
+        display: flex;
+        justify-content: center;
+        }
+    }
+    .lonely-item{
+        
+        background-color: #93F846;
+        width:190px;
+        height: 50px;
+    }
+    
+}
+
