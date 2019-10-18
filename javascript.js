@@ -45,6 +45,10 @@ i = new Stack();
 i.push(1);
 i.push(2);
 i.push(3);
+function showStackSize(){
+    document.getElementById("size").innerHTML=":"+i.size();
+}
+
 i.swapTopTwo();
 console.log(i.items);
 
