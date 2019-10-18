@@ -69,14 +69,26 @@ function pop() {
     renderStack();
 }
 
-function peek(){
+function peek() {
 
 }
 
-function newStack(){
+function newStack() {
     stack.clear();
     renderStack();
 }
+
+function isStackEmpty() {
+    let answer;
+    if (stack.isEmpty()) {
+        answer = "yes";
+    }
+    else {
+        answer = "no";
+    }
+    document.getElementById("is-empty").innerHTML=answer;
+}
+
 
 
 
