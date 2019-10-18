@@ -20,14 +20,14 @@ header{
 .focus-color{
     color: red;
 }
-.stack{
+#stack{
     border-width: 0px 3px 3px 3px;
     border-style: solid;
     border-color: black;
     width:200px;
-    height: 300px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+
 }
 .operations{
     cursor: pointer;
@@ -57,7 +57,8 @@ header{
 }
 .lonely-item{
     background-color: #93F846;
-    width:190px;
+    width:183px;
     height: 50px;
+    margin: 5px;
 }
 

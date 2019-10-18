@@ -41,16 +41,34 @@ class Stack {
 }
 
 
-i = new Stack();
-i.push(1);
-i.push(2);
-i.push(3);
-function showStackSize(){
-    document.getElementById("size").innerHTML=":"+i.size();
+stack = new Stack();
+stack.push(1);
+stack.push(2);
+stack.push(3);
+stack.push(1);
+stack.push(2);
+stack.push(3);
+
+
+function renderStack() {
+    let html = "";
+    for (let i = 0; i < stack.size(); i++) {
+        html += `<div class="lonely-item"></div>`;
+    }
+    document.getElementById("stack").innerHTML = html;
 }
 
-i.swapTopTwo();
-console.log(i.items);
+renderStack();
+
+function showStackSize() {
+    document.getElementById("size").innerHTML = ":" + stack.size();
+}
+
+function pop() {
+    stack.pop();
+    renderStack();
+}
+
 
 
 
