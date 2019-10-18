@@ -23,7 +23,7 @@ class Stack {
 
     //return if the stack is empty or not
     isEmpty() {
-        return this.length == 0;
+        return this.items.length == 0;
     }
 
     //clear  the stack
@@ -42,18 +42,18 @@ class Stack {
 
 
 stack = new Stack();
-stack.push(1);
+stack.push('diana');
 stack.push(2);
 stack.push(3);
-stack.push(1);
-stack.push(2);
-stack.push(3);
+stack.push(4);
+stack.push(5);
+stack.push(6);
 
 
 function renderStack() {
     let html = "";
     for (let i = 0; i < stack.size(); i++) {
-        html += `<div class="lonely-item"></div>`;
+        html += `<div class="lonely-item ">${stack.peek()}</div>`;
     }
     document.getElementById("stack").innerHTML = html;
 }
@@ -70,6 +70,10 @@ function pop() {
 }
 
 function peek() {
+    let item =stack.peek();
+    if(item ==undefined)
+    item="stack is empty"
+    document.getElementById("peek").innerHTML = ":" + item;
 
 }
 
@@ -79,7 +83,7 @@ function newStack() {
 }
 
 function isStackEmpty() {
-    let answer;
+    let answer="";
     if (stack.isEmpty()) {
         answer = "yes";
     }
@@ -87,6 +91,11 @@ function isStackEmpty() {
         answer = "no";
     }
     document.getElementById("is-empty").innerHTML=answer;
+}
+
+function swapTopTwo(){
+    stack.swapTopTwo();
+    renderStack();
 }
 
 

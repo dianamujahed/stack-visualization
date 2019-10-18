@@ -82,9 +82,13 @@ header {
 }
 
 .lonely-item {
-  background-color: #93F846;
+  background-color: #97F846;
   width: 183px;
   height: 50px;
   margin: 5px;
+}
+
+.item5 {
+  background-color: yellow;
 }
 /*# sourceMappingURL=style.css.map */
